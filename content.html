@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pengguna</title>
+</head>
+<body bgcolor="grey">
+
+    <h2>Formulir Pengguna</h2>
+    <form action="/submit-form" method="POST">
+        <!-- Input Nama -->
+        <label for="nama">Nama Lengkap:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <!-- Input Email -->
+        <label for="email">NPM:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Input Tanggal Lahir -->
+        <label for="dob">Tanggal Lahir:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Pilihan Jenis Kelamin -->
+        <label for="gender">Jenis Kelamin:</label><br>
+        <input type="radio" id="male" name="gender" value="Laki-laki">
+        <label for="male">Laki-laki</label><br>
+        <input type="radio" id="female" name="gender" value="Perempuan">
+        <label for="female">Perempuan</label><br><br>
+
+        <!-- Input Pesan -->
+        <label for="pesan">Pesan:</label><br>
+        <textarea id="pesan" name="pesan" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Tombol Kirim -->
+        <input type="submit" value="Kirim">
+    </form>
+
+</body>
+</html>
